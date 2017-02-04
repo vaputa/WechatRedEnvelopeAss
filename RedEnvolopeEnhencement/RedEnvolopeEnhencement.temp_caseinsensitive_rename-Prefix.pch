@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'redEnvolopeEnhencement' target in the 'redEnvolopeEnhencement' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

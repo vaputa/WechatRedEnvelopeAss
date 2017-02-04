@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350373801E2CDA75000F5D31 /* LoggerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3503737D1E2CDA75000F5D31 /* LoggerClient.h */; };
+		350373811E2CDA75000F5D31 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3503737E1E2CDA75000F5D31 /* LoggerClient.m */; };
+		350373821E2CDA75000F5D31 /* NSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 3503737F1E2CDA75000F5D31 /* NSLogger.h */; };
+		350373841E2CDA8F000F5D31 /* LoggerCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 350373831E2CDA8F000F5D31 /* LoggerCommon.h */; };
+		350373881E2CDB6B000F5D31 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350373871E2CDB6B000F5D31 /* CFNetwork.framework */; };
+		3503738A1E2CDB8A000F5D31 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350373891E2CDB8A000F5D31 /* SystemConfiguration.framework */; };
+		C507B7031C9FD1E1008455DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C507B7021C9FD1E1008455DA /* Foundation.framework */; };
+		C507B7051C9FD1E1008455DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C507B7041C9FD1E1008455DA /* UIKit.framework */; };
+		C507B7111C9FD1E1008455DA /* hook.mm in Sources */ = {isa = PBXBuildFile; fileRef = C507B7101C9FD1E1008455DA /* hook.mm */; };
+		C507B71B1C9FD25D008455DA /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = C507B71A1C9FD25D008455DA /* CaptainHook.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3503737D1E2CDA75000F5D31 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
+		3503737E1E2CDA75000F5D31 /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
+		3503737F1E2CDA75000F5D31 /* NSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLogger.h; sourceTree = "<group>"; };
+		350373831E2CDA8F000F5D31 /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
+		350373851E2CDAD9000F5D31 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		350373871E2CDB6B000F5D31 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		350373891E2CDB8A000F5D31 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C507B6FF1C9FD1E1008455DA /* libRedEnvolopeEnhencement.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libRedEnvolopeEnhencement.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C507B7021C9FD1E1008455DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C507B7041C9FD1E1008455DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C507B70D1C9FD1E1008455DA /* RedEnvolopeEnhencement.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedEnvolopeEnhencement.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
+		C507B7101C9FD1E1008455DA /* hook.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = hook.mm; sourceTree = "<group>"; };
+		C507B71A1C9FD25D008455DA /* CaptainHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptainHook.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C507B6FB1C9FD1E1008455DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3503738A1E2CDB8A000F5D31 /* SystemConfiguration.framework in Frameworks */,
+				350373881E2CDB6B000F5D31 /* CFNetwork.framework in Frameworks */,
+				C507B7031C9FD1E1008455DA /* Foundation.framework in Frameworks */,
+				C507B7051C9FD1E1008455DA /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C507B6F51C9FD1E1008455DA = {
+			isa = PBXGroup;
+			children = (
+				C507B7061C9FD1E1008455DA /* RedEnvolopeEnhencement */,
+				C507B7011C9FD1E1008455DA /* Frameworks */,
+				C507B7001C9FD1E1008455DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C507B7001C9FD1E1008455DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C507B6FF1C9FD1E1008455DA /* libRedEnvolopeEnhencement.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C507B7011C9FD1E1008455DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				350373891E2CDB8A000F5D31 /* SystemConfiguration.framework */,
+				350373871E2CDB6B000F5D31 /* CFNetwork.framework */,
+				350373851E2CDAD9000F5D31 /* CoreTelephony.framework */,
+				C507B7021C9FD1E1008455DA /* Foundation.framework */,
+				C507B7041C9FD1E1008455DA /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C507B7061C9FD1E1008455DA /* RedEnvolopeEnhencement */ = {
+			isa = PBXGroup;
+			children = (
+				C507B7101C9FD1E1008455DA /* hook.mm */,
+				C507B71A1C9FD25D008455DA /* CaptainHook.h */,
+				3503737D1E2CDA75000F5D31 /* LoggerClient.h */,
+				350373831E2CDA8F000F5D31 /* LoggerCommon.h */,
+				3503737E1E2CDA75000F5D31 /* LoggerClient.m */,
+				3503737F1E2CDA75000F5D31 /* NSLogger.h */,
+				C507B70B1C9FD1E1008455DA /* Supporting Files */,
+			);
+			name = RedEnvolopeEnhencement;
+			path = redEnvolopeEnhencement;
+			sourceTree = "<group>";
+		};
+		C507B70B1C9FD1E1008455DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C507B70D1C9FD1E1008455DA /* RedEnvolopeEnhencement.temp_caseinsensitive_rename-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C507B6FC1C9FD1E1008455DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C507B71B1C9FD25D008455DA /* CaptainHook.h in Headers */,
+				350373841E2CDA8F000F5D31 /* LoggerCommon.h in Headers */,
+				350373821E2CDA75000F5D31 /* NSLogger.h in Headers */,
+				350373801E2CDA75000F5D31 /* LoggerClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C507B6FE1C9FD1E1008455DA /* RedEnvolopeEnhencement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C507B7171C9FD1E1008455DA /* Build configuration list for PBXNativeTarget "RedEnvolopeEnhencement" */;
+			buildPhases = (
+				C507B6FA1C9FD1E1008455DA /* Sources */,
+				C507B6FB1C9FD1E1008455DA /* Frameworks */,
+				C507B6FC1C9FD1E1008455DA /* Headers */,
+				C507B6FD1C9FD1E1008455DA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedEnvolopeEnhencement;
+			productName = redEnvolopeEnhencement;
+			productReference = C507B6FF1C9FD1E1008455DA /* libRedEnvolopeEnhencement.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C507B6F61C9FD1E1008455DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					C507B6FE1C9FD1E1008455DA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = C507B6F91C9FD1E1008455DA /* Build configuration list for PBXProject "RedEnvolopeEnhencement" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C507B6F51C9FD1E1008455DA;
+			productRefGroup = C507B7001C9FD1E1008455DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C507B6FE1C9FD1E1008455DA /* RedEnvolopeEnhencement */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C507B6FD1C9FD1E1008455DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C507B6FA1C9FD1E1008455DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350373811E2CDA75000F5D31 /* LoggerClient.m in Sources */,
+				C507B7111C9FD1E1008455DA /* hook.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C507B7151C9FD1E1008455DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		C507B7161C9FD1E1008455DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		C507B7181C9FD1E1008455DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redEnvolopeEnhencement/RedEnvolopeEnhencement.temp_caseinsensitive_rename-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		C507B7191C9FD1E1008455DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redEnvolopeEnhencement/RedEnvolopeEnhencement.temp_caseinsensitive_rename-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C507B6F91C9FD1E1008455DA /* Build configuration list for PBXProject "RedEnvolopeEnhencement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C507B7151C9FD1E1008455DA /* Debug */,
+				C507B7161C9FD1E1008455DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C507B7171C9FD1E1008455DA /* Build configuration list for PBXNativeTarget "RedEnvolopeEnhencement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C507B7181C9FD1E1008455DA /* Debug */,
+				C507B7191C9FD1E1008455DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C507B6F61C9FD1E1008455DA /* Project object */;
+}
